@@ -1,0 +1,18 @@
+services:
+  trainer:
+    build: .
+    dockerfile: Dockerfile
+    container_name: trainer
+
+    working_dir: /opt
+
+    command: ["python", "run_periments.py"]
+    
+    env_file:
+      - .env
+    
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./cache:/app/.cache
+      - ./runs:/opt/runs
+
