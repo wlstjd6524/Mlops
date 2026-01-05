@@ -1,0 +1,10 @@
+boto3
+lightgbm
+numpy
+pandas
+python-dotenv
+requests
+scikit-learn
+wandb
+joblib
+
